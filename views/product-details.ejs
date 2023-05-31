@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detay</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <%- include('partials/nav') %>
+    <div class="container">
+        <div style="display: flex;flex-wrap: wrap; gap:20px">
+
+        <div class="card mb-3" style="max-width: 400px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="/img/<%=urun.imageUrl%>" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%=urun.name%>
+                        </h5>
+                        <p class="card-text">
+                           <%=urun.title%>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+</body>
+
+</html> 
+
+
+
+
+
